@@ -152,7 +152,7 @@ montoInput.addEventListener("input", () => {
   const monto = parseFloat(montoInput.value);
 
   if (!isNaN(monto) && monto > 0) {
-    const impuesto = monto * 0.15;
+    const impuesto = monto * 0.01;
     impuestoValor.textContent = impuesto.toFixed(2);
     impuestoTexto.style.display = "block";
   } else {
